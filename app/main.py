@@ -6,6 +6,7 @@ import pickle
 import nltk
 from app.utils.data_cleaning import data_cleaning
 from app.routers.get_summary import get_summary
+import uvicorn
 
 
 app = FastAPI()
@@ -37,4 +38,6 @@ def root():
               </html>"""
 
 
-
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
