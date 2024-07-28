@@ -5,6 +5,7 @@ import numpy as np
 import pickle
 import nltk
 from app.utils.data_cleaning import data_cleaning
+from app.routers.get_summary import get_summary
 
 
 app = FastAPI()
@@ -21,6 +22,8 @@ nltk.download('omw-1.4')
 #     allow_methods=["*"],
 #     allow_headers=["*"],
 # )
+
+get_summary()
 
 @app.get("/", response_class=HTMLResponse)
 def root():
