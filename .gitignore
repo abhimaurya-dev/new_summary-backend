@@ -1,0 +1,17 @@
+# Python bytecode
+__pycache__/
+
+# Virtual environment
+venv/
+env/
+.env/
+venv.bak/
+
+
+# VSCode
+.vscode/
+
+Lib
+Scripts
+Include
+Share
