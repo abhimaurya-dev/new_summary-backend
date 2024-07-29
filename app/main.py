@@ -36,8 +36,3 @@ def root():
                 <h1 style='display:flex; align-items:center; color:white; justify-content:center; width:100vw; font-size:4rem; height:100vh'>Welcome To News Summarizer Backend API</h1>
               </body>
               </html>"""
-
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    uvicorn.run(app, host="0.0.0.0", port=port)
